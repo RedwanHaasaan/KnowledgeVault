@@ -254,8 +254,13 @@
   justify-content: center;
   gap: 16px;
   text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
 }
-
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
 .card-image {
   height: 60px;
   width: 60px;
@@ -469,6 +474,13 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+.social-content div a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-content div a:hover img {
+  transform: scale(1.2);
 }
 .copyright
 {
